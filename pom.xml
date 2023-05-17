@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cibertec</groupId>
-	<artifactId>Sesion07_rest</artifactId>
+	<artifactId>SW_Servicios_Rest_Java17</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Sesion07_rest</name>
 	<description>Demo project for Spring Boot</description>
