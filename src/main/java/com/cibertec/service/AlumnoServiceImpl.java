@@ -1,6 +1,7 @@
 package com.cibertec.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,4 +25,21 @@ public class AlumnoServiceImpl implements AlumnoService {
 		return repository.save(obj);
 	}
 
+	@Override
+	public Optional<Alumno> buscaAlumno(int idAlumno) {
+		return repository.findById(idAlumno);
+	}
+
+	@Override
+	public List<Alumno> listaAlumno(int idAlumno, String nombre, String dni) {
+		return repository.listaAlumno(idAlumno, nombre, dni);
+	}
+
+	@Override
+	public void eliminaAlumno(int idAlumno) {
+		repository.deleteById(idAlumno);
+	}
+
 }
+
+
